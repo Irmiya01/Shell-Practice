@@ -14,7 +14,7 @@ ls -l
 echo "-----------------------------------------------------------------------------------------------------------------------------"
 
 # File Content
-echo " press ctrl+d to Exit!"
+echo " Enter some content. press ctrl+d to Exit!"
 cat > file1.txt 
 cat file1
 echo "-----------------------------------------------------------------------------------------------------------------------------"
@@ -50,10 +50,12 @@ echo "--------------------------------------------------------------------------
 
 # Permissions
 echo "Permissions"
+touch /mnt/c/Users/IRMIYA/OneDrive/Desktop/Shell_Scripting/per.txt
+ls -l
 chmod 600 file1.txt                    # Set read and write permissions for the owner only
-ls -l file1.txt
+ls -l
 
 
-# Deleting files which were created in this script
+# echo Deleting files which were created in this script
 # cd ..
 # rm -r LinuxLab backup
