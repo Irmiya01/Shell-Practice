@@ -1,3 +1,5 @@
+#! /bin/bash
+
 # Hello World
 echo -e "Welcome to Linux Shell Scripting Lab\n"
 
