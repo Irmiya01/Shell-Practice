@@ -8,6 +8,7 @@ echo "--------------------------------------------------------------------------
 mkdir -v LinuxLab  
 cd LinuxLab
 touch file1.txt file2.txt file3.txt file4.txt file5.txt
+cd ..
 
 # Long Listing
 ls -l
@@ -15,47 +16,47 @@ echo "--------------------------------------------------------------------------
 
 # File Content
 echo " Enter some content. press ctrl+d to Exit!"
-cat > file1.txt 
-cat file1
+cat > LinuxLab/file1.txt 
+echo You Entered:
+cat LinuxLab/file1.txt
 echo "-----------------------------------------------------------------------------------------------------------------------------"
 
 # Head and Tail
-man ls > file.txt # 
-head -n 5 file.txt 
+head -n 2 LinuxLab/file1.txt 
 echo "-----------------------------------------------------------------------------------------------------------------------------"   
-tail -n 5 file.txt
+tail -n 2 LinuxLab/file1.txt 
 echo "-----------------------------------------------------------------------------------------------------------------------------"
 
 # File statistics
-wc -lwc file.txt                        # - Count lines, words, and characters in file.txt
+wc -lwc LinuxLab/file1.txt                        # - Count lines, words, and characters in file.txt
 echo "-----------------------------------------------------------------------------------------------------------------------------"
 
 # Copy and Move
-mkdir -v ../backup
-cp -v file.txt ../backup/
-mv -v file.txt file_backup.txt
+mkdir  backup
+cp -v LinuxLab/file1.txt backup/
+mv -v backup/file1.txt backup/file_backup.txt
 echo "-----------------------------------------------------------------------------------------------------------------------------"
 
 # File Search
-ls -lR *.txt     # List all .txt files in the current directory
+ls -lR LinuxLab/*.txt     
 echo "-----------------------------------------------------------------------------------------------------------------------------"
 
 # Sysytem Information
 echo "System Information:"
-date
-whoami
-hostname
-uname -a
+echo "Date:$(date)"
+echo "USer:$(whoami)"
+echo "Host:$(hostname)"
+echo "Kernel:$(uname)" 
 echo "-----------------------------------------------------------------------------------------------------------------------------"
 
 # Permissions
 echo "Permissions"
-touch /mnt/c/Users/IRMIYA/OneDrive/Desktop/Shell_Scripting/per.txt
-ls -l
-chmod 600 file1.txt                    # Set read and write permissions for the owner only
-ls -l
+cd ~
+ls -l LinuxLab/test1.txt
+chmod 600 LinuxLab/test.txt                    
+ls -l LinuxLab/test1.txt
+cd /mnt/c/Users/IRMIYA/OneDrive/Desktop/Shell_Scripting
 
 
 # echo Deleting files which were created in this script
-# cd ..
 # rm -r LinuxLab backup
