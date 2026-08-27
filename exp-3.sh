@@ -34,7 +34,7 @@ echo "-----------------------------------------------------------------"
 # Largest of two Numbers
 echo -e "Largest of two Numbers\n"
 read -p "Enter two numbers:" num2 num3
-if [[ $num2 =~ ^-?[0-9]+$ && $num2 =~ ^-?[0-9]+$ ]]                     # regrex condition
+if [[ $num2 =~ ^-?[0-9]+$ && $num3 =~ ^-?[0-9]+$ ]]                     # regrex condition
 then
    if (( $num2 != $num3  ))
    then
@@ -55,7 +55,7 @@ echo -e "Largest among Three Numbers\n"
 read -p "Enter three numbers:" num4 num5 num6
 if [[ $num4 =~ ^-?[0-9]+$ && $num5 =~ ^-?[0-9]+$ && $num6 =~ ^-?[0-9]+$ ]]                     # regrex condition
 then
-   if (( $num4 != $num5 != $num6 ))
+   if (( $num4 != $num5 && $num4 != $num6 && $num5 != $num6 ))
    then
       if [[ $num4 -ge $num5 && $num4 -ge $num6 ]]
       then
@@ -66,7 +66,8 @@ then
       else
          echo $num6 is Largest
       fi
-
+   else
+      echo All are equal..
    fi
 fi
 echo "-----------------------------------------------------------------"
@@ -90,7 +91,6 @@ then
       else
          echo $num9 is Smallest
       fi
-
    fi
 fi
 echo "-----------------------------------------------------------------"
@@ -133,23 +133,23 @@ if [[ $score =~ ^[0-9]+$ ]]
 then
    if (( score >= 90 && score <= 100 ))
     then
-        echo "Outstanding!"
+        echo "A grade"
 
     elif (( score >= 80 && score < 90 ))
     then
-        echo "A grade"
+        echo "B grade"
 
     elif (( score >= 60 && score < 80 ))
     then
-        echo "B grade"
+        echo "C grade"
 
     elif (( score >= 50 && score < 60 ))
     then
-        echo "C grade"
+        echo "D grade"
 
     elif (( score >= 40 && score < 50 ))
     then
-        echo "D grade"
+        echo "E grade"
 
     elif (( score >= 0 && score < 40 ))
     then
