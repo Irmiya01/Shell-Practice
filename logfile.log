@@ -1,0 +1,10 @@
+192.168.1.10 user1 ERROR Database connection failed
+192.168.1.11 user2 SUCCESS Login successful
+192.168.1.10 user1 WARNING Invalid password attempt
+192.168.1.12 user3 SUCCESS File downloaded
+192.168.1.13 user2 ERROR File not found
+192.168.1.11 user2 SUCCESS Logout successful
+192.168.1.14 user4 WARNING High memory usage
+192.168.1.10 user1 SUCCESS Login successful
+192.168.1.12 user3 ERROR Permission denied
+192.168.1.15 user5 SUCCESS File uploaded

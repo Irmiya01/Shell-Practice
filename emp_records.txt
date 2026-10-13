@@ -1,0 +1,10 @@
+101::Ravi Kumar::Engineering::75000
+102::Priya Sharma::HR::52000
+103::Arjun Reddy::Finance::68000
+104::Sneha Rao::Marketing::59000
+105::Kiran Babu::Engineering::82000
+106::Lakshmi Devi::Operations::47000
+107::Suresh Varma::Sales::55000
+108::Anitha Naidu::Engineering::91000
+109::Mahesh Goud::IT Support::43000
+110::Divya Chowdary::Finance::72000

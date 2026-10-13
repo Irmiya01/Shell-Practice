@@ -3,7 +3,7 @@
 # Even or Odd
 echo -e "Even or Odd\n"
 read -p "Enter a number:" num
-if [[ $num =~ ^[0-9]+$ ]]                     # regrex condition
+if [[ $num =~ ^[0-9]+$ ]]                          # regrex condition
 then
     if [[ $(($num % 2)) -eq 0 ]]
     then
@@ -11,6 +11,8 @@ then
     else
        echo $num is odd
     fi
+else
+   echo "Only Positive integer values are allowed!"    
 fi
 echo "-----------------------------------------------------------------"
 
@@ -28,6 +30,8 @@ then
    else
        echo $num1
     fi
+else
+   echo "Only integer values are allowed!"    
 fi
 echo "-----------------------------------------------------------------"
 
@@ -47,6 +51,8 @@ then
    else
       echo $num2 and $num3 are equal
    fi
+else
+   echo "Only integer values are allowed"   
 fi
 echo "-----------------------------------------------------------------"
 
@@ -69,6 +75,8 @@ then
    else
       echo All are equal..
    fi
+else
+   echo "Only integer values are allowed"   
 fi
 echo "-----------------------------------------------------------------"
 
@@ -92,6 +100,8 @@ then
          echo $num9 is Smallest
       fi
    fi
+else
+   echo "Only integer values are allowed"   
 fi
 echo "-----------------------------------------------------------------"
 
@@ -109,6 +119,8 @@ then
     else
           echo Enter reasonable age
     fi
+else
+   echo "InValid Age!"    
 fi
 echo "-----------------------------------------------------------------"
 
@@ -202,5 +214,7 @@ then
       echo $file is writable and executable  
    else
       echo $file has no permissions    
-   fi         
+   fi 
+else
+   echo "$file Doesn't Exist"
 fi   

@@ -1,0 +1,10 @@
+alice::Alice@123
+bob::Bob@456
+charlie::Charlie@789
+david::David@321
+emma::Emma@654
+frank::Frank@987
+grace::Grace@147
+henry::Henry@258
+irene::Irene@369
+jack::Jack@741

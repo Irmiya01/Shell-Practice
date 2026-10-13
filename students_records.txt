@@ -1,0 +1,10 @@
+101::Ravi Kumar::CSE::88
+102::Anjali Sharma::ECE::92
+103::Mohammed Faisal::Mechanical::76
+104::Sneha Reddy::CSE::95
+105::Karthik Iyer::Civil::68
+106::Priya Nair::IT::84
+107::Arjun Singh::ECE::59
+108::Divya Menon::CSE::90
+109::Vikram::MEC::72
+110::Fatima Sheikh::IT::81
